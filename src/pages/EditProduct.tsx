@@ -12,7 +12,7 @@ import { Grid } from '@mui/material'; // Используем старый Grid
 
 const ProductsPage: React.FC = () => {
   const dispatch = useAppDispatch();
-  const { items, currentPage, itemsPerPage, searchQuery, loading, error } = useSelector(
+  const { items, currentPage, itemsPerPage, searchQuery, error } = useSelector(
     (state: RootState) => state.products
   );
   const [filteredItems, setFilteredItems] = useState(items);
